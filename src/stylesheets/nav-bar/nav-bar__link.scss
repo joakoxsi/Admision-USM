@@ -1,11 +1,22 @@
+.nav-bar {
+  background-color: #005e90;
+}
+
 .nav-bar__link {
   display: inline-block;
   margin-right: 25px;
   padding: 27px;
-  color: rgb(4, 100, 253);
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #004f79; // Color de fondo al hacer hover
+    color: #e1f5fe; // Color del texto al hacer hover
+  }
 
   &--active {
-    background: #222;
+    background: #00456a;
     color: white;
   }
 }
