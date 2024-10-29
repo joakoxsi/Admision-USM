@@ -5,15 +5,10 @@ header {
   align-items: center;
 }
 .Usm-logo {
-  /* background-color: white; */
   padding: 10px;
   display: flex;
   max-width: 300px;
   margin: 20px;
-  /*border: 3px;
-  border-color: black;
-  border-style: solid;
-  border-radius: 10px;*/
 }
 
 .layout__title {
@@ -21,4 +16,6 @@ header {
   margin: 20px;
   color: rgba(10, 10, 10, 0.6);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
 }

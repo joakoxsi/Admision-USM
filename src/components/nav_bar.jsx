@@ -13,7 +13,15 @@ export const NavBar = () => {
         Inicio
       </NavLink>
       <NavLink className={navLinkClass} to="/carreras">
-        Carreras
+        Pregrado
+      </NavLink>
+      <NavLink
+        className={navLinkClass}
+        to="https://postgrado.usm.cl/programas/">
+        Postgrado
+      </NavLink>
+      <NavLink className={navLinkClass} to="https://educacioncontinua.usm.cl/">
+        Eduación Continua
       </NavLink>
     </nav>
   );
