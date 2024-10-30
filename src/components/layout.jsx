@@ -7,23 +7,27 @@ import Carreras from "../pages/carreras";
 
 import logo from "../assets/logo-usm.svg";
 import NavBar from "../components/nav_bar";
-import "../stylesheets/layout/layout.css";
+import "../stylesheets/layout/layout.scss";
+import Footer from "./footer";
 
 const Layout = () => {
   return (
     <BrowserRouter>
       <div className="layout">
-        <header>
-          <img src={logo} className="Usm-logo" alt="logo" />
-          <h1 className="layout__title">Admisión USM</h1>
-        </header>
-        <NavBar />
-        <div className="layout__page">
+        <div className="nav-header">
+          <header>
+            <img src={logo} className="Usm-logo" alt="logo" />
+            <h1 className="layout__title">Admisión USM</h1>
+          </header>
+          <NavBar />
+        </div>
+        <main className="layout__page">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/carreras" element={<Carreras />} />
           </Routes>
-        </div>
+        </main>
+        <Footer />
       </div>
     </BrowserRouter>
   );

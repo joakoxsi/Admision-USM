@@ -1,5 +1,107 @@
+$primary-color: #005e90;
+$hover-bg-color: #004f79;
+$active-bg-color: #00456a;
+$text-color: white;
+$hover-text-color: #e1f5fe;
+
 .nav-bar {
+  background-color: $primary-color;
   display: flex;
-  background-color: #ccc;
-  padding-left: 20px;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+  &__logo img {
+    height: 50px;
+    margin-right: 20px;
+  }
+
+  &__toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: $text-color;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: $primary-color;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    &.open {
+      display: flex;
+      animation: slideDown 0.3s ease-in-out;
+    }
+  }
+
+  &__link {
+    color: $text-color;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 15px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $hover-bg-color;
+      color: $hover-text-color;
+    }
+
+    &--active {
+      background-color: $active-bg-color;
+      color: $text-color;
+    }
+  }
+
+  &__dropdown {
+    position: relative;
+
+    &:hover .nav-bar__dropdown-menu {
+      display: flex;
+    }
+
+    &-menu {
+      display: none;
+      position: absolute;
+      top: 160%;
+      left: 0;
+      background-color: $primary-color;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-direction: column;
+
+      .nav-bar__link {
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

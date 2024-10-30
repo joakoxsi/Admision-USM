@@ -1,0 +1,282 @@
+.home-page {
+  &__hero {
+    position: relative;
+    width: 100%;
+    height: 60vh; // Ajuste de altura para dar más espacio
+
+    .home-page__hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.4
+      ); // Fondo oscuro semitransparente para legibilidad
+    }
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(60%);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    &-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+
+      h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+      }
+
+      .home-page__cta-button {
+        background-color: #005e90;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #004f79;
+        }
+      }
+    }
+  }
+
+  &__events,
+  &__programs,
+  &__testimonials,
+  &__scholarships,
+  &__contact,
+  &__faq {
+    text-align: center;
+    padding: 40px 20px;
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__events-cards,
+  &__testimonials-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .event-card,
+    .program-card,
+    .testimonial-card {
+      background: #f9f9f9;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 300px;
+      text-align: left;
+
+      h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      button {
+        background-color: #005e90;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #004f79;
+        }
+      }
+    }
+  }
+
+  &__programs-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .program-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; // Asegura el espacio entre elementos
+      align-items: center; // Centra el contenido horizontalmente
+      background: #f9f9f9;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+
+      &__image {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      p {
+        flex-grow: 1; // Ocupa el espacio disponible entre el título y el botón
+        display: flex;
+        align-items: center; // Centra verticalmente el texto
+        justify-content: center;
+      }
+
+      button {
+        background-color: #005e90;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 20px; // Asegura espacio con el texto anterior
+
+        &:hover {
+          background-color: #004f79;
+        }
+      }
+    }
+  }
+
+  &__testimonials-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .testimonial-card {
+      background: #f0f4f8;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      max-width: 300px;
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: "“";
+        font-size: 4em;
+        color: #005e90;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        opacity: 0.2;
+      }
+
+      &__quote {
+        font-style: italic;
+        font-size: 1.1em;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      &__author {
+        font-weight: bold;
+        color: #555;
+        text-align: right;
+      }
+    }
+  }
+
+  &__scholarships {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .home-page__scholarships-button {
+      background-color: #005e90;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+
+      &:hover {
+        background-color: #004f79;
+      }
+    }
+  }
+
+  &__faq {
+    text-align: center;
+    padding: 40px 20px;
+
+    &-image {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    &-button {
+      background-color: #005e90;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+
+      &:hover {
+        background-color: #004f79;
+      }
+    }
+  }
+
+  &__scholarships-button,
+  &__contact-button {
+    background-color: #005e90;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+
+    &:hover {
+      background-color: #004f79;
+    }
+  }
+}
