@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import HomePage from "../pages/home_page";
 
-import Carreras from "../pages/carreras";
+import Carreras from "../pages/carreras"; 
+
+import PostulacionPage from "../pages/PostulacionPage";
 
 import logo from "../assets/logo-usm.svg";
 import NavBar from "../components/nav_bar";
@@ -24,7 +26,8 @@ const Layout = () => {
         <main className="layout__page">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/carreras" element={<Carreras />} />
+            <Route path="/carreras" element={<Carreras />} /> 
+            <Route path="/postulacion" element={<PostulacionPage />} />
           </Routes>
         </main>
         <Footer />
