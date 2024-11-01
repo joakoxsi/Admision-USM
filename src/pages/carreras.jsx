@@ -3,6 +3,7 @@ import CarrerasSubNav from '../components/sub_navbar';
 import CarreraImagen from '../components/imagen';
 import PerfilDeIngreso from '../components/info-carrera';
 
+
 export const Carreras = () => {
   const [selectedCarrera, setSelectedCarrera] = useState("");
   return (
@@ -11,9 +12,9 @@ export const Carreras = () => {
       <div className="contenido-carrera">
         {selectedCarrera ? (
           <>
+
           <CarreraImagen carrera={selectedCarrera} />
-          <PerfilDeIngreso />
-          <p>Información sobre: {selectedCarrera}</p>
+          <PerfilDeIngreso carreraid={selectedCarrera}/>
           </>
         ) : (
           
