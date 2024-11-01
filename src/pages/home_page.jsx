@@ -1,5 +1,5 @@
 import React from "react";
-import headerImage from "../assets/admision-directo.jpg"; // Ejemplo de imagen de estudiante
+import headerImage from "../assets/admision-directo.jpg";
 import scholarshipsImage from "../assets/beneficio.jpg";
 import ImageArqui from "../assets/imagen-carrera/casa-central-arquitectura.w2000.jpg";
 import ImageInfo from "../assets/imagen-carrera/casa-central-ingenieria-civil-informatica.w700.jpg";
@@ -68,7 +68,7 @@ const HomePage = () => {
             />
             <h3>Ingeniería Civil Informática</h3>
             <p>
-              Conoce el programa de Ingeniería Civil Informática y sus
+              Conoce el programa de Ingeniería Civil Informática y sus grandes
               oportunidades.
             </p>
             <button>Ver Programa</button>
@@ -81,8 +81,8 @@ const HomePage = () => {
             />
             <h3>Arquitectura</h3>
             <p>
-              Explora la carrera de Arquitectura en la USM y su enfoque
-              innovador.
+              Entérate de la carrera de Arquitectura en la USM y su enfoque
+              sumamente innovador.
             </p>
             <button>Ver Programa</button>
           </div>
@@ -105,7 +105,7 @@ const HomePage = () => {
       {/* Sección de Testimonios */}
       <section className="home-page__testimonials">
         <h2>Lo que dicen nuestros estudiantes</h2>
-        <div className="home-page__testimonials-cards">
+        <div className="home-page__testimonials-carousel">
           <div className="testimonial-card">
             <p className="testimonial-card__quote">
               "La USM me ha dado las herramientas para crecer profesional y
