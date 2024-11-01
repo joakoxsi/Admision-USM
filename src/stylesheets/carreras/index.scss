@@ -1,3 +1,27 @@
 @import './imagen.scss';
 @import './perfil.scss';
 @import './malla.scss';
+@import './info-ingreso.scss';
+
+
+.marco-carrera {
+    border: 2px solid #ddd; /* Color y grosor del borde */
+    padding: 20px;          /* Espacio interno para separar contenido del borde */
+    margin: 2px auto;      /* Separación respecto a otros elementos */
+    border-radius: 8px;     /* Esquinas redondeadas */
+    max-width: 90%;       /* Ancho máximo para limitar el tamaño del marco */
+    background-color: #f9f9f9; /* Color de fondo ligero */
+  }
+  
+  .contenido-carrera {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los componentes */
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+  }
+  

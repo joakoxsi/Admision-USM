@@ -1,12 +1,11 @@
 import React from "react";
 const carreras  = {
-  "Ing. Civil Ambiental": 1,
-  "Arquitectura": 2,
+  "Arquitectura": 1,
   "Ing. Civil": 3,
-  "Ing. Civil de Minas": 4,
+  "Ing. Civil de Minas": 5,
   "Ing. Comercial": 5,
-  "Construcción Civil": 6,
-  "Diseño de productos": 7,
+  "Construcción Civil": 2,
+  "Diseño de productos": 20,
   "Ing. Civil Eléctrica": 8,
   "Ing. Civil Electrónica": 9,
   "Lic. Física": 10,
@@ -27,17 +26,20 @@ const carreras  = {
   "Licenciatura en Astrofísica": 25,
   "Licenciatura en Ciencias, mención Química": 26,
   "Licenciatura en Física": 27,
+};
+
+/*
+
   "Química": 28,
   "Técnico Universitario Dibujante Proyectista": 29,
   "Técnico Universitario en Administración de Empresas": 30,
   "Técnico Universitario en Alimentos": 31,
   "Técnico Universitario en Automatización y Control": 32,
   "Técnico Universitario en Biotecnología": 33,
-  "Técnico Universitario en Ciencia de Datos": 34
-};
+  "Técnico Universitario en Ciencia de Datos": 34 
 
 
-// Utiliza el diccionario en CarrerasSubNav
+*/
 const CarrerasSubNav = ({ onSelectCarrera }) => {
   return (
     <div className="carreras-subnav">

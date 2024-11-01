@@ -15,7 +15,7 @@ const PerfilDeIngreso = ({carreraid}) => {
       <div className="texto-perfil">
         <h2>Perfil de Ingreso</h2>
         <p>
-          El perfil de ingreso para la carrera de Ingeniería Civil Informática abarca habilidades en...{carrera.nombre}
+          {carrera.descripcion}
           {/* Añade aquí la descripción completa del perfil de ingreso */}
         </p>
       </div>

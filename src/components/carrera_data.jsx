@@ -1,8 +1,10 @@
 export const carrerasData = {
     "1":{
-      nombre: "Arquitectura",
-      descripcion: "El perfil de ingreso para la carrera de Arquitectura abarca habilidades en...",
-      imagen: "light-off.png"
+        nombre: "Arquitectura",
+        descripcion: "La carrera de Arquitectura de la USM permite dominar y aplicar conocimientos científico-tecnológicos avanzados para el diseño, evaluación y desarrollo del hábitat construido, promoviendo con ello el mejoramiento de la calidad de vida de las personas. Instalará, como tema central de su discurso, la preocupación por la intervención sustentable sobre el medio ambiente, el emprendimiento y la investigación disciplinar. Construirá un activo diálogo interdisciplinar vinculando de modo indisoluble, la creatividad e innovación arquitectónica con las ciencias de la ingeniería y la gestión de los recursos.",
+        imagen: "light-off.png",
+        malla:'',
+        
     },
 
     "2":{
@@ -49,7 +51,8 @@ export const carrerasData = {
         nombre: "Ingeniería Civil Quimica"
     },
     "16":{
-        nombre: "Ingeniería Civil Telemática"
+        nombre: "Ingeniería Civil Telemática",
+        descripcion:"El Ingeniero/La Ingeniera Civil Telemático/a está preparado para crear soluciones basadas en servicios e infraestructura telemática para organizaciones de diverso tipo, considerando procedimientos de ciberseguridad en todas las etapas de desarrollo, utilizando infraestructura propia o en la nube, que garanticen una alta calidad de servicio agregado y cumplimiento de estándares y recomendaciones de seguridad. Tiene la capacidad de integrar sistemas telemáticos que operan bajo diversos estándares, protocolos y tecnologías de comunicación, respetando normas vigentes para satisfacer los requerimientos de la sociedad. También, es capaz de gestionar plataformas y servicios de redes telemáticas, incluyendo la planificación, el despliegue y su posterior administración, considerando la implementación de procedimientos de seguridad, disponibilidad, calidad de servicio y confiabilidad, y aplicando normas legales específicas del área para garantizar una comunicación segura y confiable.Del mismo modo, desarrolla servicios, productos y aplicaciones de las tecnologías de información y comunicación (TIC), interpretando y utilizando técnicas avanzadas de ingeniería de datos, trabajando en equipos multidisciplinarios y aplicando metodologías de desarrollo tecnológico para crear propuestas innovadoras, resolver problemáticas reales de la sociedad y mejorar continuamente los procesos y sistemas de las organizaciones. Es capaz de resolver problemas complejos, analizando y evaluando soluciones efectivas y eficientes con un enfoque integral en el impacto organizacional, en las personas y en el medio ambiente. Ejecuta sus actividades profesionales con excelencia, enfrentando los retos con un compromiso hacia el aprendizaje continuo, la autoevaluación sistemática y una cultura de calidad. Además, comunica efectivamente sus ideas tanto en forma escrita como oral en español e inglés, y desarrollará mejoras e innovaciones tecnológicas y de gestión, generando oportunidades para responder satisfactoria- mente a las necesidades organizativas y sociales.",
     },
     "17":{
         nombre: "Ingeniería Comercial"
