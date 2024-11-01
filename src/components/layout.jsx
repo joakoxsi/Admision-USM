@@ -1,27 +1,36 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import HomePage from '../pages/home_page'
+import HomePage from "../pages/home_page";
 
-import Carreras  from '../pages/carreras' 
+import Carreras from "../pages/carreras";
 
-import NavBar from '../components/nav_bar'
+import logo from "../assets/logo-usm.svg";
+import NavBar from "../components/nav_bar";
+import "../stylesheets/layout/layout.scss";
+import Footer from "./footer";
 
 const Layout = () => {
   return (
     <BrowserRouter>
-      <div className='layout'>
-        <h1 className='layout__title'>Interfaz energética</h1>
-        <NavBar />
-        <div className='layout__page'>
-          <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/carreras' element={<Carreras />} />
-          </Routes>
+      <div className="layout">
+        <div className="nav-header">
+          <header>
+            <img src={logo} className="Usm-logo" alt="logo" />
+            <h1 className="layout__title">Admisión USM</h1>
+          </header>
+          <NavBar />
         </div>
+        <main className="layout__page">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/carreras" element={<Carreras />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
