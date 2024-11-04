@@ -1,25 +1,104 @@
 .carreras-subnav {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column; /* Coloca todo en una columna */
+    gap: 2px; /* Espaciado más pequeño entre secciones */
     padding: 10px;
     background-color: #f0f0f0;
-  }
-  
-  .carreras-subnav button {
-    background: none;
-    color: #333;
-    border: none;
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.titulo {
+    margin-bottom: 10px; /* Espacio debajo del título */
+    font-weight: bold; /* Hacer el texto más prominente */
+}
+
+.modo-selector {
+    display: flex;
+    justify-content: space-between; /* Espacio entre botones */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 10px; /* Espacio debajo del selector */
+}
+
+.modo-tarjeta {
+    flex: 1; /* Hace que cada tarjeta ocupe el mismo espacio */
+    text-align: center; /* Centra el texto dentro del botón */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px; /* Relleno reducido para los botones */
+    margin: 0 3px; /* Margen reducido entre botones */
     cursor: pointer;
-    font-size: 1em;
-  }
-  
-  .carreras-subnav button:hover {
-    text-decoration: underline;
-  }
-  
-  .contenido-carrera {
-    padding: 20px;
-    font-size: 1.1em;
-  }
-  
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.modo-tarjeta.activo {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+.sede-selector {
+    display: flex;
+    flex-direction: column; /* Cambia a columna para alinear el label y las tarjetas */
+    margin: 10px 0; /* Espacio reducido */
+    width: 100%; /* Asegura que el selector de sede ocupe todo el ancho */
+    text-align: center; /* Centra el texto del label */
+}
+
+.sede-selector label {
+    margin-bottom: 5px; /* Espacio reducido debajo del label */
+}
+
+.sede-tarjetas {
+    display: flex;
+    justify-content: space-between; /* Espacio entre tarjetas */
+    width: 100%; /* Asegura que las tarjetas usen todo el ancho */
+    gap: 5px; /* Espacio reducido entre tarjetas */
+}
+
+.sede-tarjeta {
+    flex: 1; /* Hace que cada tarjeta ocupe el mismo espacio */
+    background-color: #f0f0f0; /* Color de fondo de la tarjeta */
+    border: 1px solid #ccc; /* Borde de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 8px; /* Relleno reducido para las tarjetas */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center; /* Centra el texto en las tarjetas */
+}
+
+.sede-tarjeta.activo {
+    background-color: #007bff; /* Color de fondo cuando está activo */
+    color: white; /* Color del texto cuando está activo */
+    transform: scale(1.05); /* Efecto de aumento al activar */
+}
+
+.sede-tarjeta:hover {
+    background-color: #e0e0e0; /* Efecto hover */
+}
+
+.carreras-lista {
+    margin-top: 10px; /* Espacio reducido encima de la lista de carreras */
+}
+
+.carreras-container {
+    display: flex; /* Usar flexbox para mostrar en filas */
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en caso de que no haya suficiente espacio */
+    gap: 5px; /* Espaciado reducido entre las tarjetas */
+}
+
+.carrera-item {
+    background-color: #f0f0f0; /* Color de fondo de la carrera */
+    border: 1px solid #ccc; /* Borde de la carrera */
+    border-radius: 8px;
+    padding: 8px; /* Relleno reducido para las carreras */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1 1 100px; /* Crecer y ocupar un ancho mínimo de 100px */
+    text-align: center; /* Centrar el texto de la carrera */
+}
+
+.carrera-item.selected {
+    background-color: #007bff; /* Color azul para la carrera seleccionada */
+    color: white; /* Cambia el color del texto a blanco */
+}

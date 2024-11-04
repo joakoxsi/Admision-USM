@@ -1,21 +1,39 @@
-import React from 'react';
-import perfilImage from '../assets/light-on.png'; // Asegúrate de que la ruta sea correcta
+import React from 'react'; // Asegúrate de que la ruta sea correcta
 
-const PerfilDeIngreso = () => {
+const PerfilCarrera = ({ titulo, descripcion, imagen, tablaInformacion }) => {
+  const imagePath = require(`../assets/${imagen}`)
   return (
-    <div className="perfil-de-ingreso">
-      <div className="texto-perfil">
-        <h2>Perfil de Ingreso</h2>
-        <p>
-          El perfil de ingreso para la carrera de Ingeniería Civil Informática abarca habilidades en...
-          {/* Añade aquí la descripción completa del perfil de ingreso */}
-        </p>
+    <div className="perfil-carrera">
+      <div className="perfil-seccion">
+        <h2 className='titulo-perfil'>{titulo}</h2>
+        <p className='descri-perfil'>{descripcion}</p>
       </div>
-      <div className="imagen-perfil">
-        <img src={perfilImage} alt="Perfil de Ingreso" />
-      </div>
+      <div className="contenedor">
+        <div className="imagen-seccion">
+          <img src={imagePath} alt="Perfil" 
+          style={{ maxWidth: '60%', height: 'auto' }}
+         />
+         </div>
+        
+         <div className="tabla-seccion">
+          <div className='conte'>
+            <h4>Tabla con información</h4>
+            <table>
+            < tbody>
+                {tablaInformacion.map((item, index) => (
+                  <tr key={index}>
+                    <td>{item.informacion}</td>
+                    <td>{item.valor}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+       </div>
+
     </div>
   );
 };
 
-export default PerfilDeIngreso;
+export default PerfilCarrera;
