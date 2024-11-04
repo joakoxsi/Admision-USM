@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import headerImage from "../assets/admision-directo.jpg";
 import scholarshipsImage from "../assets/beneficio.jpg";
 import ImageArqui from "../assets/imagen-carrera/casa-central-arquitectura.w2000.jpg";
@@ -19,12 +20,11 @@ const HomePage = () => {
           />
           <div className="home-page__hero-text">
             <h1>Bienvenidos a Admisión USM</h1>
-            <p>
-              Descubre todas las oportunidades que la Universidad Técnica
-              Federico Santa María tiene para ti.
-            </p>
+            <p></p>
             <button className="home-page__cta-button">
-              Explora Nuestras Carreras
+              <NavLink className="home-page__cta-button-link" to="/carreras">
+                Explora Nuestras Carreras
+              </NavLink>
             </button>
           </div>
         </div>
@@ -71,7 +71,11 @@ const HomePage = () => {
               Conoce el programa de Ingeniería Civil Informática y sus grandes
               oportunidades.
             </p>
-            <button>Ver Programa</button>
+            <button>
+              <NavLink className="program-card__button" to="/carrera/10">
+                Ver Programa
+              </NavLink>
+            </button>
           </div>
           <div className="program-card">
             <img
@@ -84,7 +88,11 @@ const HomePage = () => {
               Entérate de la carrera de Arquitectura en la USM y su enfoque
               sumamente innovador.
             </p>
-            <button>Ver Programa</button>
+            <button>
+              <NavLink className="program-card__button" to="/carrera/1">
+                Ver Programa
+              </NavLink>
+            </button>
           </div>
           <div className="program-card">
             <img
@@ -97,7 +105,11 @@ const HomePage = () => {
               Descubre cómo Ingeniería Comercial puede abrirte puertas en el
               mundo empresarial.
             </p>
-            <button>Ver Programa</button>
+            <button>
+              <NavLink className="program-card__button" to="/carrera/17">
+                Ver Programa
+              </NavLink>
+            </button>
           </div>
         </div>
       </section>
@@ -137,7 +149,11 @@ const HomePage = () => {
           estudiantes.
         </p>
         <button className="home-page__scholarships-button">
-          Conoce Todas las Becas
+          <NavLink
+            className="home-page__scholarships-button"
+            to="/construccion">
+            Conoce Todas las Becas
+          </NavLink>
         </button>
       </section>
 
@@ -147,7 +163,11 @@ const HomePage = () => {
         <p>
           Resuelve tus dudas más comunes sobre el proceso de admisión en la USM.
         </p>
-        <button className="home-page__faq-button">Preguntas Frecuentes</button>
+        <button className="home-page__faq-button">
+          <NavLink className="home-page__faq-button" to="/construccion">
+            Preguntas Frecuentes
+          </NavLink>
+        </button>
       </section>
     </div>
   );

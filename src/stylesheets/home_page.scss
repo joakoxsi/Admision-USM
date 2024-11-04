@@ -47,8 +47,13 @@
         padding: 10px 20px;
         border: none;
         cursor: pointer;
+        border-radius: 5px;
         font-size: 1em;
         transition: background-color 0.3s;
+        &-link {
+          text-decoration: none;
+          color: white;
+        }
 
         &:hover {
           background-color: #004f79;
@@ -64,6 +69,11 @@
   &__faq {
     text-align: center;
     padding: 40px 20px;
+
+    &-button {
+      text-decoration: none;
+      color: white;
+    }
 
     h2 {
       font-size: 2em;
@@ -122,6 +132,11 @@
       justify-content: space-between; // Asegura el espacio entre los elementos
       transition: transform 0.3s;
       height: 100%; // Se asegura que todas las cards tengan la misma altura
+
+      &__button {
+        text-decoration: none;
+        color: white;
+      }
 
       &:hover {
         transform: scale(1.05);
