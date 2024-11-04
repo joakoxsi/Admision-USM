@@ -31,13 +31,10 @@ export const NavBar = () => {
         <div className="nav-bar__dropdown">
           <span className="nav-bar__link">Pregrado ⏷</span>
           <div className="nav-bar__dropdown-menu">
-            <NavLink className={navLinkClass} to="/pregrado/programas">
+            <NavLink className={navLinkClass} to="/carreras">
               Programas de Pregrado
             </NavLink>
-            <NavLink className={navLinkClass} to="/pregrado/requisitos">
-              Requisitos de Ingreso
-            </NavLink>
-            <NavLink className={navLinkClass} to="/pregrado/postulacion">
+            <NavLink className={navLinkClass} to="/construccion">
               Proceso de Postulación
             </NavLink>
           </div>
@@ -47,22 +44,22 @@ export const NavBar = () => {
         <div className="nav-bar__dropdown">
           <span className="nav-bar__link">Postgrado ⏷</span>
           <div className="nav-bar__dropdown-menu">
-            <NavLink className={navLinkClass} to="/postgrado/programas">
+            <NavLink className={navLinkClass} to="/construccion">
               Programas de Postgrado
             </NavLink>
-            <NavLink className={navLinkClass} to="/postgrado/admision">
+            <NavLink className={navLinkClass} to="/construccion">
               Admisión Postgrado
             </NavLink>
-            <NavLink className={navLinkClass} to="/postgrado/becas">
+            <NavLink className={navLinkClass} to="/construccion">
               Becas y Financiamiento
             </NavLink>
           </div>
         </div>
 
-        <NavLink className={navLinkClass} to="/vida-universitaria">
+        <NavLink className={navLinkClass} to="/construccion">
           Vida Universitaria
         </NavLink>
-        <NavLink className={navLinkClass} to="/contacto">
+        <NavLink className={navLinkClass} to="/construccion">
           Contacto
         </NavLink>
       </div>
