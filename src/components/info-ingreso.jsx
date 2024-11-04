@@ -1,6 +1,7 @@
 import React from 'react';
 
-const InformacionCarrera = () => {
+
+const InformacionCarrera = ({ tabla }) => {
   return (
     <div className="informacion-carrera">
       {/* Sección de Información para Postular */}
@@ -17,41 +18,21 @@ const InformacionCarrera = () => {
           <li>Porcentaje Vacantes DEMRE 2025</li>
         </ul>
 
-        {/* Tabla de Porcentajes */}
+        {/* Tabla de Información */}
         <table className="tabla-postulacion">
           <thead>
             <tr>
-              <th></th>
-              <th>NEM</th>
-              <th>Ranking Notas</th>
-              <th>Competencia Matemática 1 (M1)</th>
-              <th>Competencia Matemática 2 (M2)</th>
-              <th>Competencia Lectora</th>
-              <th>Ciencias</th>
-              <th>Historia y Ciencias Sociales</th>
+              <th>Información</th>
+              <th>Valor</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>SIN M2</td>
-              <td>15%</td>
-              <td>25%</td>
-              <td>40%</td>
-              <td>NO EXIGE</td>
-              <td>10%</td>
-              <td>10%</td>
-              <td>10%</td>
-            </tr>
-            <tr>
-              <td>CON M2</td>
-              <td>15%</td>
-              <td>20%</td>
-              <td>35%</td>
-              <td>10%</td>
-              <td>10%</td>
-              <td>10%</td>
-              <td>10%</td>
-            </tr>
+            {tabla.map((item, index) => (
+              <tr key={index}>
+                <td>{item.informacion}</td>
+                <td>{item.valor}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

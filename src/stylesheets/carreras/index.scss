@@ -9,7 +9,7 @@
     padding: 20px;          /* Espacio interno para separar contenido del borde */
     margin: 2px auto;      /* Separación respecto a otros elementos */
     border-radius: 8px;     /* Esquinas redondeadas */
-    max-width: 90%;       /* Ancho máximo para limitar el tamaño del marco */
+    max-width: 80%;       /* Ancho máximo para limitar el tamaño del marco */
     background-color: #f9f9f9; /* Color de fondo ligero */
   }
   
@@ -25,3 +25,8 @@
     color: #555;
   }
   
+  .carreras-subnav {
+    display: flex;
+    flex-direction: column;
+    
+  }

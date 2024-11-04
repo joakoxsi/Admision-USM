@@ -1,0 +1,25 @@
+.carreras-subnav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .carreras-subnav button {
+    background: none;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .carreras-subnav button:hover {
+    text-decoration: underline;
+  }
+  
+  .contenido-carrera {
+    padding: 20px;
+    font-size: 1.1em;
+  }
+  

@@ -1,23 +1,76 @@
-.perfil-de-ingreso {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .texto-perfil {
-    flex: 2;
-  }
-  
-  .imagen-perfil {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .imagen-perfil img {
-    max-width: 50%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
+.perfil-carrera {
+  display: flex; /* Usar flexbox para organizar el contenido */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: flex-start; /* Alinear los elementos al inicio */
+  border: 2px solid #007bff; /* Borde azul */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px 0; /* Margen superior e inferior */
+  background-color: #f9f9f9; /* Fondo claro */
+}
+
+.titulo-perfil {
+  font-size: 1.8rem; /* Tamaño de fuente más grande para el título */
+  margin-bottom: 10px; /* Espacio debajo del título */
+  text-align: center;
+  font-weight: 511100;
+
+}
+.descri-perfil {
+  font-size: 1.65rem; /* Tamaño de fuente estándar */
+  margin-bottom: 20px; /* Espacio debajo de la descripción */
+  text-align: justify;
+}
+
+.perfil-seccion {
+  flex: 0 0 40%; /* Cambia a 0 0 40% para limitar el ancho a un máximo del 40% */
+  max-width: 40%; /* Limita el ancho a un 40% */
+  padding: 10px; /* Espacio interno */
+  /*background-color: #007bff;  Color de fondo azul */
+  color: rgb(19, 18, 18); /* Color del texto */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-right: 20px; /* Espacio entre la sección de perfil y la imagen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.imagen-seccion {
+  display: flex;
+  justify-content: center; /* Centra la imagen */
+  margin-bottom: 10px
+}
+
+
+.imagen-seccion img {
+  max-width: 80%; /* Asegurarse de que la imagen no exceda el ancho del contenedor */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+
+.tabla-seccion {
+  margin-top: 20px; /* Margen superior para separar de otras secciones */
+}
+
+.tabla-seccion table {
+  width: 100%; /* Ocupa todo el ancho */
+  border-collapse: collapse; /* Colapsar bordes */
+}
+
+.tabla-seccion th, .tabla-seccion td {
+  border: 1px solid #ddd; /* Borde de las celdas */
+  padding: 8px; /* Espaciado interno */
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.tabla-seccion th {
+  background-color: #007bff; /* Fondo azul para encabezados */
+  color: white; /* Color del texto en encabezados */
+}
+
+.tabla-seccion tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color de fondo alternativo para filas */
+}
+.contenedor{
+  width: 100%;
+  margin-block : 0 auto;
+
+}
