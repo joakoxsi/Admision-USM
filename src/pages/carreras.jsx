@@ -29,21 +29,15 @@ export const Carreras = () => {
     // Agrega más datos según sea necesario
   ] : [];;
 
-  
-  const handleSelectSede = (sede) => {
-    setSelectedSede(sede);
-  };
-  
-  console.log('Carrera seleccionada:', selectedCarrera); // Debugging
+  console.log('Carrera seleccionada:', tablacarrera); // Debugging
+  console.log('sede :', selectedSede);
   // Debugging
   //console.log('Código:', sedeInfo.codigo);
 
   console.log('Tabla:', carreraInfo);
   return (
     <div >
-      <CarrerasSubNav onSelectCarrera={setSelectedCarrera} 
-onSelectSede={handleSelectSede}/>
-
+      <CarrerasSubNav onSelectCarrera={setSelectedCarrera} onSelectSede={setSelectedSede} />
       <div className="marco-carrera">
           <div className="contenido-carrera">
             {carreraInfo ? (

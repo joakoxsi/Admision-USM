@@ -1,8 +1,6 @@
 
 
 export const carrerasData = {
-    
-    
     "1":{
         nombre: "Arquitectura",
         descripcion: "La carrera de Arquitectura de la USM permite dominar y aplicar conocimientos científico-tecnológicos avanzados para el diseño, evaluación y desarrollo del hábitat construido, promoviendo con ello el mejoramiento de la calidad de vida de las personas. Instalará, como tema central de su discurso, la preocupación por la intervención sustentable sobre el medio ambiente, el emprendimiento y la investigación disciplinar. Construirá un activo diálogo interdisciplinar vinculando de modo indisoluble, la creatividad e innovación arquitectónica con las ciencias de la ingeniería y la gestión de los recursos.",
@@ -12,6 +10,7 @@ export const carrerasData = {
         grado:" Licenciado en Arquitectura o Licenciada en Arquitectura",
         duracion:"5,5 años (11 semestres académicos)",
         /* cambio de tema*/
+        puntaje:550,
         Valparaíso:{
             codigo:15180,
             max:937,
@@ -24,7 +23,7 @@ export const carrerasData = {
             min:760.1,
             vacantes:70,
         },
-        puntaje:550
+        
         
     },
 
@@ -35,8 +34,15 @@ export const carrerasData = {
         malla:'Construcción Civil.png',
         titulo:" Constructor Civil o Constructora Civil",
         grado:"Licenciado en Construcción Civil o Licenciada en Construcción Civil",
-        duracion:"5 años (10 semestres académicos)"
+        duracion:"5 años (10 semestres académicos)",
         /* cambio de tema*/
+        puntaje:550,
+        Valparaíso:{
+            codigo:15110,
+            max:874.9,
+            min:645.6,
+            vacantes:35,
+        },
     },
 
     3:{
@@ -46,7 +52,21 @@ export const carrerasData = {
         malla:'Ingeniería Civil.png',
         titulo:"Ingeniero Civil o Ingeniera Civil",
         grado:"Licenciatura en Ciencias de la Ingeniería",
-        duracion:"6 años (12 semestres académicos)"
+        duracion:"6 años (12 semestres académicos)",
+        /* cambio de tema*/
+        puntaje:600,
+        Valparaíso:{
+            codigo:15111,
+            max:944.6,
+            min:684.9,
+            vacantes:60,
+        },
+        San_Joaquín:{
+            codigo:15311,
+            max:913.9 ,
+            min:793.8,
+            vacantes:75,
+        },
     },
     4:{
         nombre: "Ingeniería Civil Ambiental",
@@ -55,8 +75,16 @@ export const carrerasData = {
         malla:'Ingeniería Civil Ambiental.webp',
         titulo:" Ingeniero Civil Ambiental o Ingeniera Civil Ambiental.",
         grado:" Licenciatura en Ciencias de la Ingeniería.",
-        duracion:"5 años (10 semestres académicos)."
+        duracion:"5 años (10 semestres académicos).",
+        puntaje:600,
+        Valparaíso:{
+            codigo:15151,
+            max:902.2,
+            min:672.5,
+            vacantes:30,
+        },
     },
+
     5:{
         nombre: "Ingeniería Civil de Minas",
         descripcion: "El (La) titulado (a) de Ingeniería Civil de Minas de la Universidad Técnica Federico Santa María es capaz de diseñar soluciones innovadoras y sostenibles para problemas complejos del sector minero. Aplica conocimientos en geomecánica, evaluación de yacimientos, explotación minera y procesamiento de minerales. Participa en el diseño, modelado y evaluación de procesos y operaciones mineras, utilizando ciencias básicas, ingeniería y fundamentos económicos y administrativos, contribuyendo a la optimización de proyectos de ingeniería. Está preparado para colaborar en operaciones mineras, integrando equipos multidisciplinarios y aplicando normativas legales y principios de sostenibilidad. Su capacidad para resolver problemas, optimizar procesos y asegurar el correcto funcionamiento de operaciones mineras le permitirá contribuir al desarrollo eficiente y sostenible del sector. El (La) Ingeniero (a) Civil de Minas de la Universidad Técnica Federico Santa María destaca por su compromiso transversal con la calidad, lo cual le permite desenvolverse con excelencia en el campo laboral, comunicándose de manera efectiva tanto en español como en inglés. Por otra parte, promueve el autocuidado, autodesarrollo y la autogestión a través de un estilo de vida saludable, actuando siempre con una responsabilidad social y ética acorde a los principios inherentes a su profesión y en coherencia con el legado testamentario de Don Federico Santa María.",
@@ -64,7 +92,15 @@ export const carrerasData = {
         malla:'Ingeniería Civil de Minas.webp',
         titulo:" Ingeniero Civil de Minas o Ingeniera Civil de Minas.",
         grado:"Licenciatura en Ciencias de la Ingeniería.",
-        duracion:"5 años (10 semestres académicos)."
+        duracion:"5 años (10 semestres académicos).",
+
+        puntaje:600,
+        San_Joaquín:{
+            codigo:15312,
+            max:914.6 ,
+            min:753.2,
+            vacantes: 90,
+        },
     },
 
     6:{
@@ -74,7 +110,14 @@ export const carrerasData = {
         malla:'Ingeniería Civil Electrónica.webp',
         titulo:"Ingeniero Civil Electrónico o Ingeniera Civil Electrónica.",
         grado:"Licenciatura en Ciencias de la Ingeniería.",
-        duracion:"5 años (10 semestres académicos)."
+        duracion:"5 años (10 semestres académicos).",
+        puntaje:600,
+        Valparaíso:{
+            codigo:15151,
+            max:902.2,
+            min:672.5,
+            vacantes:30,
+        },
     },
     7:{
         nombre: "Ingeniería Civil en Biotecnología",
@@ -92,7 +135,20 @@ export const carrerasData = {
         malla:'Ingeniería Civil Física.webp',
         titulo:"ngeniero Civil Físico o Ingeniera Civil Física.",
         grado:"Licenciatura en Ciencias de la Ingeniería.",
-        duracion:"5 años (10 semestres académicos)."
+        duracion:"5 años (10 semestres académicos).",
+        puntaje:600,
+        Valparaíso:{
+            codigo:15184,
+            max:935.6,
+            min:737.2,
+            vacantes:30,
+        },
+        San_Joaquín:{
+            codigo:15384,
+            max:970.4 ,
+            min:746.8,
+            vacantes:35,
+        },
     },
     9:{
         nombre: "Ingeniería Civil Industrial",
@@ -101,8 +157,16 @@ export const carrerasData = {
         malla:'Ingeniería Civil Industrial.webp',
         titulo:"Ingeniero Civil Industrial o Ingeniera Civil Industrial.",
         grado:"Licenciatura en Ciencias de la Ingeniería.",
-        duracion:" 5 años (10 semestres académicos)."
+        duracion:" 5 años (10 semestres académicos).",
+        puntaje:600,
+        Vitacura:{
+            codigo: 15270,
+            max: 930.6,
+            min: 817.5,
+            vacantes: 140
+        },
     },
+
     10:{
         nombre: "Ingeniería Civil Informática",
         descripcion: "El/La Ingeniero/a Civil Informático/a de la Universidad Técnica Federico Santa María se forma para apoyar estratégicamente la mejora continua de las organizaciones, integrando eficientemente a las personas y tecnologías de información. Domina la evaluación y toma de decisiones basadas en técnicas cuantitativas en contextos de incertidumbre, diseñando soluciones de software sostenibles y escalables, reflejando así, su compromiso con la calidad y la innovación. Es capaz de realizar el análisis de sistemas computacionales a nivel de rendimiento, conectividad y seguridad, y diseña soluciones computacionales robustas, aplicando algoritmos y fundamentos teóricos para resolver problemas en ingeniería.  Gestiona recursos y promueve mejoras continuas en el ámbito personal y profesional. Tiene la habilidad de liderar equipos colaborativos y comunicarse efectivamente tanto en español como en inglés. Adicionalmente, promueve el autocuidado, el autodesarrollo y la autogestión a través de un estilo de vida saludable, actuando siempre con una responsabilidad social y ética acorde a los principios inherentes a su profesión y en coherencia con el legado testamentario de Don Federico Santa María.",
@@ -110,7 +174,20 @@ export const carrerasData = {
         malla:'Ingeniería Civil Informática.webp',
         titulo:"Ingeniero Civil Informático o Ingeniera Civil Informática.",
         grado:"Licenciatura en Ciencias de la Ingeniería.",
-        duracion:"5 años (10 semestres académicos)."
+        duracion:"5 años (10 semestres académicos).",
+        puntaje:600,
+        Valparaíso:{
+            codigo:15160,
+            max:931.6,
+            min:760.2,
+            vacantes:120,
+        },
+        San_Joaquín:{
+            codigo:15360,
+            max:951 ,
+            min:819.8,
+            vacantes:120,
+        },
     },
     11:{
         nombre: "Ingeniería Civil Matemática",
@@ -119,7 +196,21 @@ export const carrerasData = {
         malla:'Ingeniería Civil Matemática.webp',
         titulo:"Ingeniero Civil Matemático o Ingeniera Civil Matemática.",
         grado:"Licenciatura en Ciencias de la Ingeniería.",
-        duracion:"5 años (10 semestres académicos)."
+        duracion:"5 años (10 semestres académicos).",
+        /* cambio de tema*/
+        puntaje:600,
+        Valparaíso:{
+            codigo:15101,
+            max:969.6,
+            min:806.9,
+            vacantes:25,
+        },
+        San_Joaquín:{
+            codigo:15301,
+            max:929.9 ,
+            min:772.8,
+            vacantes:30,
+        },
     },
     "12":{
         nombre: "Ingeniería Civil Mecánica",
@@ -173,7 +264,22 @@ export const carrerasData = {
         malla:'Ingeniería Comercial.webp',
         titulo:" Ingeniero Comercial o Ingeniera Comercial",
         grado:"Licenciado en Ciencias de la Administración o Licenciada en Ciencias de la Administración.",
-        duracion:"5 años (10 semestres académicos)."
+        duracion:"5 años (10 semestres académicos).",
+        puntaje:600,
+        "Valparaíso": {
+            codigo: 15171,
+            max: 931.1,
+            min: 688.5,
+            vacantes: 120
+        },
+        "Vitacura":{
+            codigo: 15271,
+            max: 930,
+            min: 747.2,
+            vacantes: 200
+        }
+
+
     },
     "18":{
         nombre: "Ingeniería en Aviacion Comercial",
@@ -182,7 +288,14 @@ export const carrerasData = {
         malla:'Ingeniería en Aviación Comercial.png',
         titulo:"Ingeniero en Aviación Comercial o Ingeniera en Aviación Comercial",
         grado:"Licenciatura en Ciencias de la Ingeniería",
-        duracion:"5 años (10 semestres académicos)"
+        duracion:"5 años (10 semestres académicos)",
+        puntaje:550,
+        Vitacura: {
+            codigo: 15220,
+            max: 880.3,
+            min: 683.8,
+            vacantes: 35
+        },
     },
     "19":{
         nombre: "Ingeniería en Biotecnología",
@@ -218,7 +331,14 @@ export const carrerasData = {
         malla:'Ingeniería en Informática.png',
         titulo:"Ingeniero Informático o Ingeniera Informática",
         grado:"Licenciado en Ingeniería Informática o Licenciada en Ingeniería Informática",
-        duracion:"4 años (8 semestres académicos)"
+        duracion:"4 años (8 semestres académicos)",
+        puntaje:500,
+        "Concepción": {
+            codigo: 15462,
+            max: 870.3,
+            min: 645.8,
+            vacantes: 70
+        },
     },
     "23":{
         nombre: "Ingeniería en Mantenimiento Industrial",
@@ -227,7 +347,14 @@ export const carrerasData = {
         malla:'Ingeniería en Mantenimiento Industrial.png',
         titulo:"Ingeniero en Mantenimiento Industrial o Ingeniera en Mantenimiento Industrial",
         grado:"Licenciado en Ingeniería de Mantenimiento o Licenciada en Ingeniería de Mantenimiento",
-        duracion:"4 años (8 semestres)"
+        duracion:"4 años (8 semestres)",
+        puntaje:500,
+        "Concepción": {
+            codigo: 15540,
+            max: 644.5,
+            min: 511.3,
+            vacantes: 15,
+        },
     },
     "24":{
         nombre:"Ingeniería en Prevención de Riesgos Laborales y Ambientales",
@@ -236,7 +363,14 @@ export const carrerasData = {
         malla:'Ingeniería en Prevención de Riesgos Laborales y Ambientales.png',
         titulo:"Ingeniero en Prevención de Riesgos Laborales y Ambientales o Ingeniera en Prevención de Riesgos Laborales y Ambientales",
         grado:"Licenciado en Ingeniería en Prevención de Riesgos Laborales y Ambientales o Licenciada en ingeniería en Prevención de Riesgos Laborales y Ambientales",
-        duracion:"4 años (8 semestres académicos)"
+        duracion:"4 años (8 semestres académicos)",
+        puntaje:500,
+        "Concepción": {
+            codigo: 15574,
+            max: 639,
+            min: 514.3,
+            vacantes: 15,
+        },
     },
     "25":{
         nombre:"Licenciatura en Astrofísica",
@@ -245,7 +379,20 @@ export const carrerasData = {
         malla:'Licenciatura en Astrofísica.png',
         titulo:"Licenciatura en Astrofísica",
         grado:" Licenciado en Astrofísica o Licenciada en Astrofísica",
-        duracion:"4 años (8 semestres académicos)"
+        duracion:"4 años (8 semestres académicos)", 
+        puntaje:600,
+        Valparaíso:{
+            codigo:15103,
+            max:937.6,
+            min:739.9,
+            vacantes:25,
+        },
+        San_Joaquín:{
+            codigo:15301,
+            max:884.9 ,
+            min:701.8,
+            vacantes:30,
+        },
     },
     "26":{
         nombre:"Licenciatura en Ciencias, mención Química",
@@ -302,5 +449,21 @@ export const carrerasData = {
         duracion:"3 años"
     },
 
-      
+    32:{
+        nombre: "Ingeniería Civil Eléctrica",
+        descripcion: "El/la Ingeniero/a Civil Electricista de la Universidad Técnica Federico Santa María resuelve problemas de ingeniería, analizando e integrando información técnica proveniente de la teoría y las mediciones, definiendo alternativas viables y formulando proyectos de ingeniería eléctrica que incluyen soluciones sostenibles e innovadoras, aplicando conocimientos de las ciencias básicas y ciencias de la ingeniería, utilizando herramientas especializadas de aplicaciones y software. Este profesional tiene la capacidad de analizar sistemas de energía y potencia incorporando perspectivas a corto, mediano y largo plazo para las variables consumo, oferta energética y desarrollo tecnológico. Además, está habilitado para planificar y gestionar el desarrollo, operación y mantenimiento de estos sistemas, considerando aspectos específicos de su infraestructura y equipamiento eléctrico. El/La Ingeniero/a Civil Electricista tiene la capacidad de identificar el impacto de sus propuestas en el contexto de la organización, las personas y el medio ambiente, y se asegura que estas aporten al cumplimiento de los objetivos definidos tanto en el ámbito técnico-económico como en el de gestión, considerando los marcos regulatorios y estándares de calidad nacionales e internacionales relevantes para el sector.",
+        imagen: 'light-on.png',
+        malla:'Ingeniería Civil Eléctrica.webp',
+        titulo:"Ingeniero Civil Electricista o Ingeniera Civil Electricista.",
+        grado:"Licenciatura en Ciencias de la Ingeniería.",
+        duracion:"5 años (10 semestres académicos).",
+        puntaje:600,
+        San_Joaquín:{
+            codigo:15151,
+            max:902.2,
+            min:672.5,
+            vacantes:30,
+        },
+    } ,
+
 };

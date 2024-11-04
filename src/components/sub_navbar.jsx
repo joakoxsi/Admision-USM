@@ -7,8 +7,8 @@ const carrerasMapping = {
     "Ingeniería Civil": 3,
     "Ingeniería Civil Ambiental": 4,
     "Ingeniería Civil de Minas": 5,
-    "Ingeniería Civil Eléctrica": 6,
-    "Ingeniería Civil Electrónica":7,
+    "Ingeniería Civil Eléctrica": 32,
+    "Ingeniería Civil Electrónica":6,
     "Ingeniería Civil Física": 8,
     "Ingeniería Civil Industrial": 9,
     "Ingeniería Civil Informática": 10,
@@ -46,13 +46,17 @@ const carrerasPorSede = {
 
 const CarrerasSubNav = ({ onSelectCarrera, onSelectSede }) => {
     const [modo, setModo] = useState('Diurno');
-    const [sede, setSede] = useState('Valparaíso');
+    const [sede, setSede] = useState(onSelectSede);
     const [selectedCarrera, setSelectedCarrera] = useState(null); // Estado para la carrera seleccionada
 
     // Obtener las carreras según el modo y la sede
     const carreras = carrerasPorSede[modo][sede] || [];
     
 
+    const handleSelectSede = (sede) => {
+        setSede(sede); // Actualiza el estado local
+        onSelectSede(sede); // Informa al componente padre de la actualización
+    };
     
     
     
@@ -76,7 +80,7 @@ const CarrerasSubNav = ({ onSelectCarrera, onSelectSede }) => {
                         <div 
                             key={sedeKey} 
                             className={`sede-tarjeta ${sede === sedeKey ? 'activo' : ''}`} 
-                            onClick={() => setSede(sedeKey)}
+                            onClick={() => handleSelectSede(sedeKey)}
                         >
                             {sedeKey}
                         </div>
