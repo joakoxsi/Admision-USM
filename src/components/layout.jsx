@@ -5,7 +5,7 @@ import HomePage from "../pages/home_page";
 
 import Carreras from "../pages/carreras";
 
-import PostulacionPage from "../pages/PostulacionPage";
+/*import PostulacionPage from "../pages/PostulacionPage";*/
 
 import Carrera from "../pages/carrera";
 
@@ -31,7 +31,7 @@ const Layout = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/carreras" element={<Carreras />} />
-            <Route path="/postulacion" element={<PostulacionPage />} />
+            <Route path="/postulacion" element={<Construccion />}/>
             <Route path="/carrera/:id" element={<Carrera />} />
             <Route path="/construccion" element={<Construccion />} /> 
             <Route path="/vidaUniversitaria" element={<VidaUniversitaria />} />

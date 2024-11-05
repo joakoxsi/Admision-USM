@@ -1,3 +1,4 @@
+/*
 import React, { useState, useEffect } from 'react';
 import { Stepper, Step, StepLabel, Button, Typography, TextField, MenuItem, Select, FormControl, InputLabel, Input } from '@material-ui/core';
 import Autocomplete from '@mui/lab/Autocomplete';
@@ -389,4 +390,5 @@ const PostulacionPage = () => {
     );
 };
 
-export default PostulacionPage;
+export default PostulacionPage; 
+*/
