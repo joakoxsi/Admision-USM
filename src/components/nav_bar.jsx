@@ -34,7 +34,7 @@ export const NavBar = () => {
             <NavLink className={navLinkClass} to="/carreras">
               Programas de Pregrado
             </NavLink>
-            <NavLink className={navLinkClass} to="/construccion">
+            <NavLink className={navLinkClass} to="/postulacion">
               Proceso de Postulación
             </NavLink>
           </div>
@@ -56,7 +56,7 @@ export const NavBar = () => {
           </div>
         </div>
 
-        <NavLink className={navLinkClass} to="/construccion">
+        <NavLink className={navLinkClass} to="/vidaUniversitaria">
           Vida Universitaria
         </NavLink>
         <NavLink className={navLinkClass} to="/construccion">

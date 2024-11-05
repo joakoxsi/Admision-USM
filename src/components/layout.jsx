@@ -11,7 +11,8 @@ import Carrera from "../pages/carrera";
 
 import logo from "../assets/logo-usm.svg";
 import NavBar from "../components/nav_bar";
-import Construccion from "../pages/construccion";
+import Construccion from "../pages/construccion"; 
+import VidaUniversitaria from "../pages/VidaUniversitaria";
 import "../stylesheets/layout/layout.scss";
 import Footer from "./footer";
 
@@ -32,7 +33,8 @@ const Layout = () => {
             <Route path="/carreras" element={<Carreras />} />
             <Route path="/postulacion" element={<PostulacionPage />} />
             <Route path="/carrera/:id" element={<Carrera />} />
-            <Route path="/construccion" element={<Construccion />} />
+            <Route path="/construccion" element={<Construccion />} /> 
+            <Route path="/vidaUniversitaria" element={<VidaUniversitaria />} />
           </Routes>
         </main>
         <Footer />
