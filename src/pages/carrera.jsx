@@ -8,7 +8,7 @@ import Mallas from "../components/malla";
 
 export const Carrera = () => {
   const { id } = useParams();
-  const [selectedSede, setSelectedSede] = useState("Valparaíso");
+  const [selectedSede, setSelectedSede] = useState("");
 
   const carreraInfo = carrerasData[id] ? carrerasData[id] : null;
   const sedeInfo = carreraInfo ? carreraInfo[selectedSede] : null;

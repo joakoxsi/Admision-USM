@@ -1,15 +1,38 @@
 .vida-universitaria {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.section {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.section h2 {
-    color: #004080;
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+  width: 300px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #333;
+  line-height: 1.6;
 }
