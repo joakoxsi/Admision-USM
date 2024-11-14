@@ -2,7 +2,7 @@
   &__hero {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 30vh;
 
     .home-page__hero-overlay {
       position: absolute;
@@ -13,13 +13,6 @@
       background-color: rgba(0, 0, 0, 0.4);
     }
 
-    &-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(60%);
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
 
     &-text {
       position: absolute;
@@ -68,8 +61,7 @@
   &__scholarships,
   &__faq {
     text-align: center;
-    padding: 40px 20px;
-
+    padding: 4px 20px;
     &-button {
       text-decoration: none;
       color: white;
@@ -88,9 +80,10 @@
     flex-wrap: wrap;
 
     .event-card {
+      background-color: #005e90;
       background: #ffffff;
       border: 1px solid #e0e0e0;
-      padding: 20px;
+      padding:  11 20px;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       width: 300px;
@@ -127,7 +120,7 @@
       overflow: hidden;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
       width: 300px;
-      padding: 20px; // Añade un espacio alrededor del contenido
+      padding: 15 20px; // Añade un espacio alrededor del contenido
       text-align: center;
       justify-content: space-between; // Asegura el espacio entre los elementos
       transition: transform 0.3s;
@@ -194,6 +187,9 @@
 
     .testimonial-card {
       flex: 0 0 300px;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
       background: #f0f4f8;
       padding: 20px;
       border-radius: 12px;

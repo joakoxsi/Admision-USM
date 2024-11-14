@@ -13,11 +13,6 @@ const HomePage = () => {
       {/* Sección Hero / Bienvenida */}
       <header className="home-page__hero">
         <div className="home-page__hero-overlay">
-          <img
-            src={headerImage}
-            alt="Welcome to USM"
-            className="home-page__hero-image"
-          />
           <div className="home-page__hero-text">
             <h1>Bienvenidos a Admisión USM</h1>
             <p></p>
