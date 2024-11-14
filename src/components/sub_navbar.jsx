@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../stylesheets/sub-navbar/sub_navbar.scss";
 
 // Datos de carreras con sus IDs
 const carrerasMapping = {
@@ -71,15 +72,15 @@ const carrerasPorSede = {
     ],
   },
   Vespertino: {
-    Valparaíso: ["Ingeniería Civil Industrial", "Ingeniería Comercial– ICV"],
+    Valparaíso: ["Ingeniería Civil Industrial", "Ingeniería Comercial – ICV"],
     San_Joaquín: [
       "Ingeniería de Ejecución en Gestión Industrial",
       "Ingeniería de Ejecución en Software",
     ],
-    Vitacura: ["Ingeniería Civil Industrial", "Ingeniería Comercial–ICV"],
+    Vitacura: ["Ingeniería Civil Industrial", "Ingeniería Comercial – ICV"],
     Concepción: [
       "Ingeniería de Ejecución en Gestión Industrial",
-      "Ingeniería Comercial– ICV",
+      "Ingeniería Comercial – ICV",
       "Ingeniería de Ejecución en Control e Instrumentación Industrial",
     ],
     "Viña del Mar": [
@@ -91,65 +92,61 @@ const carrerasPorSede = {
 
 const CarrerasSubNav = ({ onSelectCarrera, onSelectSede }) => {
   const [modo, setModo] = useState("Diurno");
-  const [sede, setSede] = useState(onSelectSede);
-  const [selectedCarrera, setSelectedCarrera] = useState(null); // Estado para la carrera seleccionada
+  const [sede, setSede] = useState(onSelectSede || "Valparaíso");
+  const [selectedCarrera, setSelectedCarrera] = useState("");
 
   // Obtener las carreras según el modo y la sede
   const carreras = carrerasPorSede[modo][sede] || [];
 
-  const handleSelectSede = (sede) => {
-    setSede(sede); // Actualiza el estado local
-    onSelectSede(sede); // Informa al componente padre de la actualización
-  };
-
   return (
     <div className="carreras-subnav">
-      <h2 className="titulo">Selecciona una opción</h2>
-      <div className="modo-selector">
-        <div
-          className={`modo-tarjeta ${modo === "Diurno" ? "activo" : ""}`}
-          onClick={() => setModo("Diurno")}>
-          Diurno
+      <h2 className="titulo-filtro">Filtrar Carreras</h2>
+      <div className="selector-container">
+        <div className="modo-selector">
+          <button
+            className={`modo-btn ${modo === "Diurno" ? "activo" : ""}`}
+            onClick={() => setModo("Diurno")}>
+            Diurno
+          </button>
+          <button
+            className={`modo-btn ${modo === "Vespertino" ? "activo" : ""}`}
+            onClick={() => setModo("Vespertino")}>
+            Vespertino
+          </button>
         </div>
-        <div
-          className={`modo-tarjeta ${modo === "Vespertino" ? "activo" : ""}`}
-          onClick={() => setModo("Vespertino")}>
-          Vespertino
-        </div>
-      </div>
-      <div className="sede-selector">
-        <label>Selecciona Sede:</label>
-        <div className="sede-tarjetas">
+        <select
+          value={sede}
+          onChange={(e) => {
+            const newSede = e.target.value;
+            setSede(newSede);
+            onSelectSede(newSede);
+          }}
+          className="sede-dropdown">
+          <option value="">Selecciona Sede</option>
           {Object.keys(carrerasPorSede[modo]).map((sedeKey) => (
-            <div
-              key={sedeKey}
-              className={`sede-tarjeta ${sede === sedeKey ? "activo" : ""}`}
-              onClick={() => handleSelectSede(sedeKey)}>
+            <option key={sedeKey} value={sedeKey}>
               {sedeKey}
-            </div>
+            </option>
           ))}
-        </div>
-      </div>
-      <div className="carreras-lista">
-        <h3>Carreras disponibles:</h3>
-        <div className="carreras-container">
+        </select>
+        <select
+          value={selectedCarrera}
+          onChange={(e) => {
+            const carrera = e.target.value;
+            const id = carrerasMapping[carrera];
+            if (id) onSelectCarrera(id);
+            setSelectedCarrera(carrera);
+          }}
+          className="carreras-dropdown">
+          <option value="" disabled>
+            Selecciona Carrera
+          </option>
           {carreras.map((carrera) => (
-            <div
-              key={carrera}
-              className={`carrera-item ${
-                selectedCarrera === carrera ? "selected" : ""
-              }`}
-              onClick={() => {
-                const id = carrerasMapping[carrera];
-                if (id) {
-                  onSelectCarrera(id);
-                }
-                setSelectedCarrera(carrera); // Actualiza la carrera seleccionada
-              }}>
+            <option key={carrera} value={carrera}>
               {carrera}
-            </div>
+            </option>
           ))}
-        </div>
+        </select>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
   background-color: #00456a;
   color: white;
   text-align: center;
-  padding: 1px 0;
+  padding-bottom: 15px;
 
   &__content {
     display: flex;
@@ -10,6 +10,7 @@
     align-items: center;
     p {
       color: white;
+      margin: 5px 0;
     }
   }
 
